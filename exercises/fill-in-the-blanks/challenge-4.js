@@ -7,10 +7,10 @@ const challenge4 = (array) => {
   return new Promise(
     (res, rej) => {
       setTimeout(() => {
-        if (allEven) {
-          _(_);
+        if (!allEven) {
+          res(array);
         } else {
-          _(_);
+          rej(array);
         }
       }, 0)
     })
